@@ -1,16 +1,19 @@
 # 🍽️ Mini Restaurant Management App (Role Based)
+
 ## 📌 Project Overview
 
 This is a role-based React application that allows Admins to manage restaurant data and Customers to view restaurants.
 The app uses localStorage for data persistence and implements authentication, protected routes, CRUD operations, search, and filters using core React concepts.
 
+
 ## 🔐 Login Credentials
-## Role	Email	Password
+### Role	Email	Password
 Admin	admin@gmail.com
 	admin1234
 	
 Customer	customer@gmail.com
 	customer1234
+	
 
 ## 🚀 Features
 Authentication & Authorization
@@ -20,6 +23,7 @@ Role-based login (Admin / Customer)
 Protected routes using React Router
 
 Unauthorized users cannot access dashboards
+
 
 ## Admin Features
 
@@ -33,6 +37,7 @@ Delete restaurant with confirmation
 
 All data stored in localStorage (evalData key)
 
+
 ## Customer Features
 
 View all restaurants
@@ -40,6 +45,7 @@ View all restaurants
 No add / update / delete access
 
 Always sees latest data from localStorage
+
 
 ## Common Features
 
@@ -52,6 +58,7 @@ Filter by restaurant type
 Filter by parking availability
 
 Search input auto-focus using useRef
+
 
 ## 🧠 React Concepts Used
 
@@ -72,6 +79,7 @@ Conditional Rendering
 Local Storage
 
 Reusable Components
+
 
 ## 🗂️ Folder Structure
 
@@ -144,9 +152,11 @@ Alerts shown after add, update, delete
 
 Form clears after successful addition
 
+
 ## ⚙️ How to Run the Project
 npm install
 npm run dev
+
 
 ## 🧾 Storage Details
 
@@ -155,6 +165,7 @@ All restaurant data is stored in localStorage
 Key used: evalData
 
 UI always renders data from localStorage
+
 
 ## 📝 Evaluation Notes
 
