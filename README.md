@@ -8,6 +8,7 @@ The app uses localStorage for data persistence and implements authentication, pr
 ## Role	Email	Password
 Admin	admin@gmail.com
 	admin1234
+	
 Customer	customer@gmail.com
 	customer1234
 
