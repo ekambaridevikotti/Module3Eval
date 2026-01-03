@@ -9,7 +9,6 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-
       <Route
         path="/admin/dashboard"
         element={
@@ -18,7 +17,6 @@ const App = () => {
           </ProtectedRoute>
         }
       />
-
       <Route
         path="/admin/restaurants/update"
         element={
@@ -27,7 +25,6 @@ const App = () => {
           </ProtectedRoute>
         }
       />
-
       <Route
         path="/customers/dashboard"
         element={
