@@ -1,16 +1,166 @@
-# React + Vite
+# 🍽️ Mini Restaurant Management App (Role Based)
+## 📌 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a role-based React application that allows Admins to manage restaurant data and Customers to view restaurants.
+The app uses localStorage for data persistence and implements authentication, protected routes, CRUD operations, search, and filters using core React concepts.
 
-Currently, two official plugins are available:
+## 🔐 Login Credentials
+## Role	Email	Password
+Admin	admin@gmail.com
+	admin1234
+Customer	customer@gmail.com
+	customer1234
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+Authentication & Authorization
 
-## React Compiler
+Role-based login (Admin / Customer)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Protected routes using React Router
 
-## Expanding the ESLint configuration
+Unauthorized users cannot access dashboards
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Admin Features
+
+Add restaurant using sidebar form
+
+Auto-generated restaurant ID
+
+Update restaurant details
+
+Delete restaurant with confirmation
+
+All data stored in localStorage (evalData key)
+
+## Customer Features
+
+View all restaurants
+
+No add / update / delete access
+
+Always sees latest data from localStorage
+
+## Common Features
+
+Restaurant cards with image, name, address, type, parking
+
+Search by restaurant name or address (partial search)
+
+Filter by restaurant type
+
+Filter by parking availability
+
+Search input auto-focus using useRef
+
+## 🧠 React Concepts Used
+
+useState
+
+useEffect
+
+useRef
+
+Context API
+
+React Router
+
+Protected Routes
+
+Conditional Rendering
+
+Local Storage
+
+Reusable Components
+
+## 🗂️ Folder Structure
+
+Module3Eval/
+
+│
+
+├── src/
+
+│   ├── components/
+
+│   │   ├── Navbar.jsx
+
+│   │   ├── ProtectedRoute.jsx
+
+│   │   └── RestaurantCard.jsx
+
+│   │
+
+│   ├── context/
+
+│   │   └── AuthContext.jsx
+
+│   │
+
+│   ├── pages/
+
+│   │   ├── Login.jsx
+
+│   │   ├── AdminDashboard.jsx
+
+│   │   ├── CustomerDashboard.jsx
+
+│   │   └── UpdateRestaurant.jsx
+
+│   │
+
+│   ├── utils/
+
+│   │   └── localStorage.js
+
+│   │
+
+│   ├── App.jsx
+
+│   ├── main.jsx
+
+│   └── index.css
+
+│
+
+├── public/
+
+│
+
+├── README.md
+
+├── package.json
+
+└── vite.config.js
+
+
+## 🧪 Edge Case Handling
+
+Empty form submission is prevented
+
+Confirmation popup before update & delete
+
+Alerts shown after add, update, delete
+
+Form clears after successful addition
+
+## ⚙️ How to Run the Project
+npm install
+npm run dev
+
+## 🧾 Storage Details
+
+All restaurant data is stored in localStorage
+
+Key used: evalData
+
+UI always renders data from localStorage
+
+## 📝 Evaluation Notes
+
+Minimum styling applied (logic focused)
+
+No external state management libraries used
+
+No backend / API used
+
+All instructions strictly followed
